@@ -11,6 +11,7 @@
     <None Include="..\..\Source\Project1Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -52,6 +53,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\Project1\Project1GameMode.h">
       <Filter>Source\Project1</Filter>
+    </ClInclude>
+    <Filter Include="Source\Project1\Private">
+      <UniqueIdentifier>{134EF594-CF0F-3199-A498-5C850FC5DCFA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Project1\Private\Customer.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Project1\Public">
+      <UniqueIdentifier>{F24FFB37-5C93-35A7-B25B-2A055B554108}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Project1\Public\Customer.h">
+      <Filter>Source\Project1\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

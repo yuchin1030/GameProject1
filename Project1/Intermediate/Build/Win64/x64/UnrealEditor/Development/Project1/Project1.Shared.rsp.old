@@ -1,6 +1,8 @@
 /I "."
+/I "C:\Users\USER\Documents\GitHub\GameProject1\Project1\Source\Project1\Private"
 /I "C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\UnrealEditor\Inc\Project1\UHT"
 /I "C:\Users\USER\Documents\GitHub\GameProject1\Project1\Source"
+/I "C:\Users\USER\Documents\GitHub\GameProject1\Project1\Source\Project1\Public"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
 /I "Runtime\TraceLog\Public"
