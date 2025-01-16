@@ -60,10 +60,22 @@
     <ClCompile Include="..\..\Source\Project1\Private\Customer.cpp">
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\FlipPancake.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\MyPlayer.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Project1\Public">
       <UniqueIdentifier>{F24FFB37-5C93-35A7-B25B-2A055B554108}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Project1\Public\Customer.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\FlipPancake.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\MyPlayer.h">
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
   </ItemGroup>
