@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PROJECT1_Project1GameMode_generated_h
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProject1GameMode(); \
 	friend struct Z_Construct_UClass_AProject1GameMode_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AProject1GameMode)
 
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AProject1GameMode(AProject1GameMode&&); \
@@ -35,12 +35,12 @@ public: \
 	PROJECT1_API virtual ~AProject1GameMode();
 
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_9_PROLOG
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_GENERATED_BODY \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_9_PROLOG
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_INCLASS_NO_PURE_DECLS \
-	FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PROJECT1_API UClass* StaticClass<class AProject1GameMode>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_GameProject_GameProject1_Project1_Source_Project1_Project1GameMode_h
+#define CURRENT_FILE_ID FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1GameMode_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

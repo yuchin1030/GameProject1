@@ -1,11 +1,11 @@
-"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\UnrealEditor\Inc\Project1\UHT\MyPlayer.gen.cpp"
-/FI"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\Definitions.Project1.h"
-/Yu"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\MyPlayer.gen.cpp.obj"
-/sourceDependencies "D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\MyPlayer.gen.cpp.dep.json"
-@"D:\GameProject\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\Project1.Shared.rsp"
+"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\UnrealEditor\Inc\Project1\UHT\MyPlayer.gen.cpp"
+/FI"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\Definitions.Project1.h"
+/Yu"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\Project1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\MyPlayer.gen.cpp.obj"
+/sourceDependencies "C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\MyPlayer.gen.cpp.dep.json"
+@"C:\Users\USER\Documents\GitHub\GameProject1\Project1\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project1\Project1.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

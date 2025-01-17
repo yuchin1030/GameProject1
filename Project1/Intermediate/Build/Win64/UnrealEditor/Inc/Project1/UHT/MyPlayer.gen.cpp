@@ -77,14 +77,14 @@ AMyPlayer::~AMyPlayer() {}
 // End Class AMyPlayer
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AMyPlayer, AMyPlayer::StaticClass, TEXT("AMyPlayer"), &Z_Registration_Info_UClass_AMyPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyPlayer), 3980326435U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_4242697127(TEXT("/Script/Project1"),
-	Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_4242697127(TEXT("/Script/Project1"),
+	Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_MyPlayer_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PROJECT1_Customer_generated_h
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACustomer(); \
 	friend struct Z_Construct_UClass_ACustomer_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ACustomer)
 
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ACustomer(ACustomer&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ACustomer();
 
 
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_20_PROLOG
-#define FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_23_GENERATED_BODY \
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_20_PROLOG
+#define FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_23_INCLASS_NO_PURE_DECLS \
-	FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PROJECT1_API UClass* StaticClass<class ACustomer>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_GameProject_GameProject1_Project1_Source_Project1_Public_Customer_h
+#define CURRENT_FILE_ID FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Public_Customer_h
 
 
 #define FOREACH_ENUM_ECUSTOMERSTATE(op) \

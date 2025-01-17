@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\gameproject\\gameproject1\\project1\\source\\project1\\private\\flippancake.cpp",
+        "Source": "c:\\users\\user\\documents\\github\\gameproject1\\project1\\source\\project1\\private\\flippancake.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\gameproject\\gameproject1\\project1\\intermediate\\build\\win64\\x64\\project1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\user\\documents\\github\\gameproject1\\project1\\intermediate\\build\\win64\\x64\\project1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "d:\\gameproject\\gameproject1\\project1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\project1\\definitions.project1.h",
-            "d:\\gameproject\\gameproject1\\project1\\source\\project1\\public\\flippancake.h",
-            "d:\\gameproject\\gameproject1\\project1\\intermediate\\build\\win64\\unrealeditor\\inc\\project1\\uht\\flippancake.generated.h"
+            "c:\\users\\user\\documents\\github\\gameproject1\\project1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\project1\\definitions.project1.h",
+            "c:\\users\\user\\documents\\github\\gameproject1\\project1\\source\\project1\\public\\flippancake.h",
+            "c:\\users\\user\\documents\\github\\gameproject1\\project1\\intermediate\\build\\win64\\unrealeditor\\inc\\project1\\uht\\flippancake.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -171,14 +171,14 @@ AProject1Character::~AProject1Character() {}
 // End Class AProject1Character
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Project1Character_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1Character_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AProject1Character, AProject1Character::StaticClass, TEXT("AProject1Character"), &Z_Registration_Info_UClass_AProject1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProject1Character), 979077518U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Project1Character_h_3444459059(TEXT("/Script/Project1"),
-	Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Project1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameProject_GameProject1_Project1_Source_Project1_Project1Character_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1Character_h_3444459059(TEXT("/Script/Project1"),
+	Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_USER_Documents_GitHub_GameProject1_Project1_Source_Project1_Project1Character_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
