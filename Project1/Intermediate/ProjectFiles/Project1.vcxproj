@@ -252,6 +252,7 @@
     <None Include="..\..\Project1.uproject"/>
     <None Include="..\..\Source\Project1.Target.cs"/>
     <None Include="..\..\Source\Project1Editor.Target.cs"/>
+    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -273,6 +274,9 @@
     <ClCompile Include="..\..\Source\Project1\Private\Customer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\CustomerAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Project1\Private\FlipPancake.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -280,6 +284,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Project1\Public\Customer.h"/>
+    <ClInclude Include="..\..\Source\Project1\Public\CustomerAnimInstance.h"/>
     <ClInclude Include="..\..\Source\Project1\Public\FlipPancake.h"/>
     <ClInclude Include="..\..\Source\Project1\Public\MyPlayer.h"/>
   </ItemGroup>

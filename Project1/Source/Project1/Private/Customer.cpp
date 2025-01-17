@@ -68,7 +68,12 @@ void ACustomer::Entry()
 
 	UE_LOG(LogTemp, Warning, TEXT("orderCnt : %d"), orderCnt);
 	UE_LOG(LogTemp, Warning, TEXT("v_reorderTime : %f"), reorderTime[v_reorderTime]);
-
+	
+	// Test
+	//FTimerHandle waitHandle;
+	//GetWorldTimerManager().SetTimer(waitHandle, [&](){
+	//	customerState = ECustomerState::ORDER;
+	//}, 5.0f, false);
 	// 자리 착지했으면 바로 주문
 	customerState = ECustomerState::ORDER;
 }
