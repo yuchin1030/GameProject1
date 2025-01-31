@@ -1,2 +1,3 @@
-2025/01/16-10:40:32.636 964 Creating DB D:/GameProject/GameProject1/Project1/Saved/webcache_4430\Local Storage\leveldb since it was missing.
-2025/01/16-10:40:32.652 964 Reusing MANIFEST D:/GameProject/GameProject1/Project1/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2025/01/24-15:17:41.047 5af0 Reusing MANIFEST D:/GameProject/GameProject1/Project1/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2025/01/24-15:17:41.051 5af0 Recovering log #3
+2025/01/24-15:17:41.052 5af0 Reusing old log D:/GameProject/GameProject1/Project1/Saved/webcache_4430\Local Storage\leveldb/000003.log 

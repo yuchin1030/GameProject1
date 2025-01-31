@@ -57,31 +57,61 @@
     <Filter Include="Source\Project1\Private">
       <UniqueIdentifier>{134EF594-CF0F-3199-A498-5C850FC5DCFA}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Project1\Private\CookTable.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Project1\Private\Customer.cpp">
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Project1\Private\CustomerAnimInstance.cpp">
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\CutMeat.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\Door.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Project1\Private\FlipPancake.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\MyGameModeBase.cpp">
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Project1\Private\MyPlayer.cpp">
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Project1\Private\StirPot.cpp">
+      <Filter>Source\Project1\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Project1\Public">
       <UniqueIdentifier>{F24FFB37-5C93-35A7-B25B-2A055B554108}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Project1\Public\CookTable.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Project1\Public\Customer.h">
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Project1\Public\CustomerAnimInstance.h">
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\CutMeat.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\Door.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Project1\Public\FlipPancake.h">
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\MyGameModeBase.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Project1\Public\MyPlayer.h">
+      <Filter>Source\Project1\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project1\Public\StirPot.h">
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
   </ItemGroup>
