@@ -81,7 +81,11 @@
       <Filter>Source\Project1\Private</Filter>
     </ClCompile>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <ClCompile Include="..\..\Source\Project1\Private\StirPot.cpp">
+=======
+    <ClCompile Include="..\..\Source\Project1\Private\TableManager.cpp">
+>>>>>>> Stashed changes
 =======
     <ClCompile Include="..\..\Source\Project1\Private\TableManager.cpp">
 >>>>>>> Stashed changes
@@ -115,7 +119,11 @@
       <Filter>Source\Project1\Public</Filter>
     </ClInclude>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <ClInclude Include="..\..\Source\Project1\Public\StirPot.h">
+=======
+    <ClInclude Include="..\..\Source\Project1\Public\TableManager.h">
+>>>>>>> Stashed changes
 =======
     <ClInclude Include="..\..\Source\Project1\Public\TableManager.h">
 >>>>>>> Stashed changes
