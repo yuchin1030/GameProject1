@@ -3,11 +3,20 @@
 
 #include "Customer.h"
 #include <Kismet/KismetArrayLibrary.h>
+#include <Runtime/AIModule/Classes/AIController.h>
+#include <Runtime/AIModule/Classes/Blueprint/AIBlueprintHelperLibrary.h>
+#include "TableManager.h"
+#include "Components/ArrowComponent.h"
+#include "Components/BoxComponent.h"
+#include "NavigationSystem.h"
+#include <Kismet/GameplayStatics.h>
 
 ACustomer::ACustomer()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	GetMesh()->SetRelativeLocation(FVector(0,0,-90));
+	GetMesh()->SetRelativeRotation(FRotator(0, -90, 0));
 }
 
 void ACustomer::BeginPlay()
@@ -15,7 +24,13 @@ void ACustomer::BeginPlay()
 	Super::BeginPlay();
 	
 	// 기본 상태를 IDLE 상태로 초기화
-	customerState = ECustomerState::ENTRY;
+	customerState = ECustomerState::IDLE;
+	startLoc = GetActorLocation();
+	
+	// 초기 회전값 설정(안해주면 이동할때마다 이상한 방향으로 회전함; 기본 화살표값이 정면으로 가게끔)
+	SetActorRotation(FRotator(0, 180, 0));
+
+	tm = Cast<ATableManager>(UGameplayStatics::GetActorOfClass(GetWorld(), ATableManager::StaticClass()));
 }
 
 void ACustomer::Tick(float DeltaTime)
@@ -28,7 +43,7 @@ void ACustomer::Tick(float DeltaTime)
 		Idle();
 		break;
 	case ECustomerState::ENTRY:
-		Entry();
+		Entry(DeltaTime);
 		break;
 	case ECustomerState::ORDER:
 		Order();
@@ -51,12 +66,9 @@ void ACustomer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+
+
 void ACustomer::Idle()
-{
-
-}
-
-void ACustomer::Entry()
 {
 	// 입장할때 메뉴 주문 횟수를 미리 정해둠
 	orderCnt = FMath::RandRange(1, 3);
@@ -68,20 +80,106 @@ void ACustomer::Entry()
 
 	UE_LOG(LogTemp, Warning, TEXT("orderCnt : %d"), orderCnt);
 	UE_LOG(LogTemp, Warning, TEXT("v_reorderTime : %f"), reorderTime[v_reorderTime]);
-	
+
+	customerState = ECustomerState::ENTRY;
+
 	// Test
 	//FTimerHandle waitHandle;
 	//GetWorldTimerManager().SetTimer(waitHandle, [&](){
-	//	customerState = ECustomerState::ORDER;
+	//	customerState = ECustomerState::ENTRY;
 	//}, 5.0f, false);
-	// 자리 착지했으면 바로 주문
-	customerState = ECustomerState::ORDER;
+	
+}
+
+void ACustomer::Entry(float _DeltaTime)
+{
+
+	AAIController* AIController = Cast<AAIController>(GetController());
+	if (AIController)
+	{
+		if (tm)
+		{
+			// Build.cs에 AIModule 추가 필수
+			UAIBlueprintHelperLibrary::SimpleMoveToLocation(AIController, tm->arrowLeftDown->GetComponentLocation());
+
+			FVector Velocity = GetVelocity();
+			Velocity.Z = 0.0f;
+			UE_LOG(LogTemp, Warning, TEXT("Velocity : %f %f %f"), Velocity.X, Velocity.Y, Velocity.Z);
+
+			if (!Velocity.IsNearlyZero())
+			{
+				FRotator TargetRotation;
+
+				// 아래쪽으로 이동 시 정면
+				if (Velocity.Y < 0)
+				{
+					TargetRotation = FRotator(0.0f, 180.0f, 0.0f); // 정면 (180도)
+				}
+				// 오른쪽으로 이동 시 오른쪽 방향
+				else if (Velocity.X > 0)
+				{
+					TargetRotation = FRotator(0.0f, 90.0f, 0.0f); // 오른쪽 (90도)
+				}
+				else if (Velocity.X < 0)
+				{
+					TargetRotation = FRotator(0.0f, -90.0f, 0.0f); // 왼쪽 (-90도)
+				}
+				else
+				{
+					TargetRotation = FRotator(0.0f, 0.0f, 0.0f); // 위쪽 (0도)
+				}
+
+				//RInterpTo를 통해 "회전 보간"을 한 부분임. (부드럽게 회전)
+				//갑자기 확 바뀌면 안되니까 천천히 바뀌도록
+				//현재 GetActorRotation에서 TargetRotation으로 5초동안 회전보간 한다는 것임.
+				SetActorRotation(FMath::RInterpTo(GetActorRotation(), TargetRotation, _DeltaTime, 5.0f));
+			}
+			//AIController->MoveToLocation(TargetLocation, /* AcceptanceRadius */ 5.0f);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("No tm"));
+		}
+		
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No AIController"));
+	}
+
+	TArray<UPrimitiveComponent*> overlappingComps;
+	this->GetOverlappingComponents(overlappingComps);
+
+	// Left Collision에 부딪히면 왼쪽으로 회전하게끔
+	for (UPrimitiveComponent* comp : overlappingComps)
+	{
+		if (comp->ComponentHasTag("Left"))
+		{
+			if (tm)
+			{
+				// leftBoxColl의 우측 벡터를 기준으로 회전값 계산
+				leftRot = FRotationMatrix::MakeFromX(tm->leftBoxColl->GetRightVector()).Rotator();
+
+				// BoxCollision의 회전을 우측 벡터 방향으로 설정(테이블을 쳐다보면서 착지)
+				SetActorRotation(leftRot);
+
+				// 자리 착지했으면 바로 주문
+				customerState = ECustomerState::ORDER;
+				break;
+			}
+			else
+			{
+				UE_LOG(LogTemp, Warning, TEXT("No tm"));
+			}
+		}
+	}
+
 }
 
 void ACustomer::Order()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Order"));
-
+	SetActorRotation(leftRot);
 	//균등 확률 보장: FMath::RandRange는 균등 분포를 가정하여 값이 선택됨
 	// 따라서 모든 메뉴가 동일한 확률로 선택됨
 	// menu 배열의 인덱스를 랜덤으로 뽑아서

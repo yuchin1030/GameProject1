@@ -69,9 +69,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MySettings")
 	bool bServed = false;
 
+	// 손님 시작 위치
+	UPROPERTY(EditAnywhere, Category = "MySettings")
+	FVector startLoc;
+
+	UPROPERTY(EditAnywhere, Category = "MySettings")
+	class ATableManager* tm;
+
+	FRotator leftRot;
+
 private:
 	void Idle();
-	void Entry();
+	void Entry(float _DeltaTime);
 	void Order();
 	void Wait(float _DeltaTime);
 	void Check(float _DeltaTime);
