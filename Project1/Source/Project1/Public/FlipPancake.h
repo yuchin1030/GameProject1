@@ -10,35 +10,17 @@ UCLASS()
 class PROJECT1_API AFlipPancake : public AActor
 {
 	GENERATED_BODY()
-
-public:
+	
+public:	
 	// Sets default values for this actor's properties
 	AFlipPancake();
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Collision)
-	class USceneComponent* DefaultSceneRoot;
-
-	// Ä¸½¶ ÄÄÆ÷³ÍÆ®
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Collision)
-	class UCapsuleComponent* CapsuleComponent;
-
-	// FixedCamera ÄÄÆ÷³ÍÆ®
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera)
-	class UCameraComponent* FixedCamera;
-
-	// Cube ÄÄÆ÷³ÍÆ®
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Visual")
-	class UStaticMeshComponent* Cube;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-private:
-	
 
 };

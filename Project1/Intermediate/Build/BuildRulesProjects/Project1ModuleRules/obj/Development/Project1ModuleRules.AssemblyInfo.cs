@@ -14,15 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project1ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe2a0ed1c78bcd7b3cb39ce350b2f2eeb7c758f4")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722460543b51170fde054e9376502bc1c476ff1a")]
->>>>>>> Stashed changes
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722460543b51170fde054e9376502bc1c476ff1a")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d660c60ce83ed03a4d6aba5893437033ab7bd58")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project1ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project1ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

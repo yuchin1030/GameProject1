@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\GameProject\\GameProject1\\Project1\\Source\\Project1\\Project1.Build.cs",
-		"D:\\GameProject\\GameProject1\\Project1\\Source\\Project1.Target.cs",
-		"D:\\GameProject\\GameProject1\\Project1\\Source\\Project1Editor.Target.cs"
+		"C:\\Users\\USER\\Documents\\GitHub\\GameProject1\\Project1\\Source\\Project1\\Project1.Build.cs",
+		"C:\\Users\\USER\\Documents\\GitHub\\GameProject1\\Project1\\Source\\Project1.Target.cs",
+		"C:\\Users\\USER\\Documents\\GitHub\\GameProject1\\Project1\\Source\\Project1Editor.Target.cs"
 	],
-	"EngineVersion": "5.4.4"
+	"EngineVersion": "5.4.2"
 }
